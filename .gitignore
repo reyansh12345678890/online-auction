@@ -1,0 +1,4 @@
+target/
+.copilot-azure/
+.env
+ONLINE_AUCTION_DATABASE_INSTRUCTIONS.txt

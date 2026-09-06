@@ -16,6 +16,8 @@ df_copy = df.copy()
 binary_cols = []
 multi_cols = []
 for col in df.columns:
+    if col in {'customerID', 'Churn'}:
+        continue
     unique_len = len(df[col].unique())
     if unique_len == 2:
         binary_cols.append(col)
